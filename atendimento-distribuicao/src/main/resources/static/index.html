@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard FlowPay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📊 Dashboard de Atendimentos - FlowPay</h1>
+
+<div class="form">
+    <input type="text" id="cliente" placeholder="Nome do cliente">
+
+    <select id="assunto">
+        <option value="CARTAO">Problemas com Cartão</option>
+        <option value="EMPRESTIMO">Contratação de Empréstimo</option>
+        <option value="OUTROS">Outros Assuntos</option>
+    </select>
+
+    <button onclick="criarAtendimento()">Criar Atendimento</button>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Cliente</th>
+        <th>Assunto</th>
+        <th>Status</th>
+        <th>Atendente</th>
+        <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody id="tabela"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
